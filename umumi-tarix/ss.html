@@ -7,7 +7,8 @@ xhttp.onreadystatechange = function() {
 
        // Typical action to be performed when the document is ready:
 
-       alert(xhttp.responseText)
+       var b=JSON.parse(xhttp.responseText)
+document.getElementById("p").innerHTML=b.mm.ad
 
     }
 
